@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Viga';
+    src: url(../fonts/Viga-Regular.ttf) format('truetype');
+}
+
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: 'Viga', 'Times New Roman', Times, serif;
+    font-size: 32px;
+}
+
+.jumbotron {
+    background-image: url(../img/jumbotron-bg.jpg);
+    height: 540px;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.content {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    font-size: 40px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
+}
+
+.content span {
+    font-weight: 500;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* info panel */
+.info-panel {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, .6);
+    margin: auto;
+    background-color: white;
+    margin-top: -100px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.info-panel h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #acacac;
+    font-style: italic;
+}
+
+/* akhir info panel */
+
+
+/* workingspace */
+.workingspace {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.workingspace h5 {
+    font-size: 52px;
+    font-weight: 200;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.workingspace span {
+    font-weight: 500;
+}
+
+.workingspace p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #acacac;
+    font-style: italic;
+    margin: 30px 0;
+}
+
+/* akhir workingspace */
+
+/* Testomonial */
+.testimonial {
+    margin-top: 120px;
+}
+
+.testimonial p {
+    font-size: 23px;
+    font-weight: 200;
+    text-align: center;
+    font-style: italic;
+}
+
+.testimonial .figure img {
+    width: 60px;
+    margin: 20px 10px 5px;
+    opacity: 0.6;
+}
+
+.testimonial .figure img.utama {
+    opacity: 1;
+    width: 100px;
+    margin-top: 2px;
+}
+
+.figure h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.testimonial .figure p {
+    margin-top: -5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* akhir Testomonial */
+
+.footer {
+    margin-top: 100px;
+}
+
+.footer p {
+    font-size: 16px;
+    color: #acacac;
+}
+
+
+
+
+/* Utility */
+.tombol {
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+/* ukuran Destop version */
+@media (min-width: 992px) {
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link,
+    .navbar-brand {
+        color: whitesmoke !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    }
+
+    .jumbotron {
+        height: 640px;
+        margin-top: -75px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        width: 50%;
+        border-bottom: 3px solid blue;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .content {
+        font-size: 62px;
+    }
+
+    .workingspace {
+        text-align: left;
+    }
+
+    .workingspace h5 {
+        text-align: left;
+    }
+
+    .workingspace h5 {
+        font-size: 50px;
+    }
+
+    .testimonial p {
+        font-size: 32px;
+    }
+
+    .footer p {
+        font-size: 20px;
+    }
+}
